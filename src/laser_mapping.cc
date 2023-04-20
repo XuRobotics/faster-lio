@@ -764,7 +764,7 @@ void LaserMapping::PublishFrameBody(const ros::Publisher &pub_laser_cloud_body) 
 
     // Note: set the point cloud to size that matches the original input, so that the ros_numpy.numpify function in the
     // infer node and process node organized points and reshaping functions can parse it properly
-    int size_full = 1024 * 64;  // 1024 * 64;
+    int size_full = 2048 * 128;  // 1024 * 64;
     // PointCloudType::Ptr laser_cloud_imu_body(new PointCloudType(size_full, 1));
 
     // Note: change to PointXYZI instead of PointXYZINormal to be compatible with ros_numpy.numpify
